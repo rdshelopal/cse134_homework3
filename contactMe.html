@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--webpage adapts to device size-->
+    <title>Contact Me</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Form</h1>
+    </header>
+    <main>
+        <form action="/submit-form" method="POST">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div>
+                    <label for="full_name_field" placeholder="YourFullName">Name:</label><br>
+                    <input type="text" name="name"><br>
+                </div>
+                <div>
+                    <label for="email_field" placeholder="YourEmail">Email:</label><br>
+                    <input type="email" name="email"><br>
+                 </div>
+            </fieldset>
+            <fieldset>
+                <legend>Your Message</legend>
+                <div>
+                    <label for="message" placeholder="YourMessage">Message:</label><br>
+                    <textarea name="message" rows="5"></textarea><br>
+                </div>
+            </fieldset>
+            
+            <div>
+                <input type="submit" value="Submit!"><!--submit button-->
+            </div>
+
+        </form>
+        <form>
+            <fieldset>
+                <legend><kbd>Choose Your Favorite Language</kbd></legend>
+
+               <!-- Fixed dropdown -->
+                <label for="lang-select">From a dropdown:</label><br>
+                <select id="lang-select" name="language">
+                <optgroup label="Frontend">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                </optgroup>
+
+                <optgroup label="Backend">
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="c++">C++</option>
+                </optgroup>
+                </select><br><br>
+
+
+                <!-- Flexible input with suggestions -->
+                <label for="lang-input">Or type one:</label><br>
+                <input list="lang-options" id="lang-input" name="language-typed">
+                <datalist id="lang-options">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+                <option value="Python">
+                <option value="C++">
+                </datalist>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>     
+    </main>
+    <footer>
+        <br>
+        <address>
+                Ryandeep Shelopal<br>
+                rdshelopal@email.com<br>
+                San Diego, CA
+            </address>
+        <p>&copy; 2025 Ryandeep Shelopal</p>
+    </footer>
+    
+</body>
+</html>

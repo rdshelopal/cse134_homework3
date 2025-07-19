@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--webpage adapts to device size-->
+    <title>Ryandeep's Resume</title>
+    <style>
+    myskills{
+      display: block;
+      border: 1px solid gray;
+      padding: 10px;
+      margin: 1rem 0;
+    }
+  </style>
+  
+</head>
+<body>
+    <header>
+        <h1>My Resume</h1>
+    </header>
+    <main>
+        <article> <!--Each section of my resume will be an article and each part of each article will be a section.-->
+            <section>
+                <h2>Education</h2>
+                <p>University of California, San Diego</p>
+                <p>Computer Engineering B.S.</p>
+                <p>Aug 2022 - Aug 2025</p>
+            </section>
+            <section>
+                <p>Ohlone College</p>
+                <p>Mathematics A.S.</p>
+                <p>Aug 2018 - May 2022</p>
+            </section>
+        </article>
+        <article>
+            <section>
+                <h2>Experience</h2>
+                <h3>Wireless Product Testing Intern</h3>
+                <p>Underwriter's Laboratories</p>
+                <ul>
+                    <li>Operated DASY (Dosimetric Assessment System) robots and CMW 500 call boxes to record SAR (radio frequency)
+                        values of wireless devices for compliance with FCC/IC standards.</li>
+                    <li>Utilized cDASY6.0 software to model and document recorded SAR measurement for each cellular technology (LTE,
+                        GSM, etc).</li>
+                    <li>Worked closely with senior engineers in a dynamic, fast-paced, customer-focused environment to ensure proper
+                        evaluation of the device.</li>
+                </ul>
+            </section>
+        </article>
+        <article>
+            <section>
+                <myskills>
+                <h2>Skills</h2>
+                <dl>
+                <dt>Frontend & Testing</dt>
+                <dd>HTML, CSS, JavaScript, Jest, Puppeteer, Markdown</dd>
+
+                <dt>Databases</dt>
+                <dd>SQL, MySQL</dd>
+
+                <dt>Programming Languages</dt>
+                <dd>C, C++, Java, Python</dd>
+                </dl>
+                </myskills>
+            </section>
+        </article>
+
+        <article>
+            <section>
+                <h2>Projects</h2>
+                <h3>Developer Journal</h3>
+                <aside>
+                    <p>HTML/CSS/Javascript</p>
+                    <p>June 2024</p>
+                </aside>
+                <ul>
+                    <li>Collaborated with a team of 9 developers over a 4-week period to develop a developer journal web application.</li>
+                    <li>Took primary responsibility for designing and implementing responsive and visually appealing user interfaces using CSS and HTML</li>
+                    <li>Utilized JavaScript for adding interactive elements, enhancing user experience, and managing storage solutions</li>
+                    <li>Developed and executed unit tests using Jest, and utilized Puppeteer for end-to-end testing to ensure code quality, reliability, and functionality across different scenarios</li>
+                    <li>Followed Agile principles, participating in daily stand-ups, sprint planning, and retrospectives to ensure iterative and incremental development</li>
+                    <li>Integrated continuous integration and continuous deployment (CI/CD) pipelines to automate testing and deployment, enhancing the development workflow.</li>
+                    <li>Delivered a video presentation of the completed project at the end of the 4-week development period</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Alarm System</h3>
+                <aside>
+                    <p>Arduino, C, Breadboarding</p>
+                    <p>May 2022</p>
+                </aside>
+                <ul>
+                    <li>Collaborated with a team of 4 to construct a door lock alarm system prototype that would deter any wrongdoers
+                    from providing a fake fingerprint via mold, within a budget of $200.</li>
+                    <li>Utilized an Arduino UNO R3, LM335Z Temperature Sensor, Biometric Fingerprint Scanner, 12V Solenoid Lock,
+                    Relay, Breadboard, Resistors, LEDs, and a Buzzer. Total Expenditure: $85.83</li>
+                    <li>Programmed system in C-based programming language by utilizing the Biometric Scanner library provided by
+                    Arduino</li>
+                    <li>Presented a live demonstration at 2022 Ohlone College Engineering Innovation Showcase.</li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+
+        <button disabled></button>>View Resume</button>
+
+        <dialog id="resumeDialog">
+            <h2>My Resume</h2>
+            <p>Click below to view or download:</p>
+            <a href="resume.pdf" target="_blank">Open PDF</a><br><br>
+            <button disabled>Close</button>
+        </dialog>
+
+        <br>
+        <p>&copy; 2025 Ryandeep Shelopal</p>
+    </footer>
+    
+</body>
+
+</html>

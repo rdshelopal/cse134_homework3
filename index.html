@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- characters used from a user's keyboard-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--webpage adapts to device size-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!--Add an icon later in development-->
+    <title>Ryan's (HTML ONLY) Portfolio</title> <!--URL name-->
+</head>
+<body>
+    <header>
+        <h1>Welcome!</h1>
+        <hr>
+        <nav>
+            <ul>
+                <li><button>Settings</button> </li>
+                <li><button><strong><span>Ryandeep Shelopal</span></strong></button> </li> <!--Will use name as "Home" Button/add css emphasis-->
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="answersToInterviewQuestions.html">Answers to Your Interview Questions</a></li>
+                <li><a href="contactMe.html">Contact Me</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section>
+            <header>
+                <hgroup>
+                    <h2>About Me</h2>
+                </hgroup>
+                <hgroup>
+                    <h3>Aspiring web developer and software engineer</h3>   
+                </hgroup>
+            </header>
+            <picture>
+                <img src="headshot.jpg" alt="Headshot">
+            </picture>
+            <!-- Inline SVG icon for fun -->
+            <svg width="40" height="40">
+                <circle cx="20" cy="20" r="15" fill="steelblue" />
+            </svg>
+            
+            <h3>Background</h3>
+            <p>Recent <b>2025 Computer Engineering Graduate</b> from <em>University of California, <i>San Diego</i>.</em> Looking for <b>client-side web development work!</b></p>
+            <aside> <!--Used an aside here because this isnt the utmost important content to a recruiter-->
+                <h3>Hobbies and Interests</h3>
+                <ol>
+                    <li>Staying active at the gym.</li>
+                    <li>Listening to new music.</li>
+                    <li>Trying new foods from different cultures.</li>
+                    <li>StreetFighter6 Player</li>
+                </ol>
+                <details>
+                        <summary>Details</summary>
+                        <p><del>Diamond Ranked!</del></p>
+                        <blockquote>
+                            <ins>"Ryan's work ethic and attention to detail is unmatched."</ins>
+                            <cite> Former Team Lead</cite>
+                        </blockquote>
+
+                    </details>
+            </aside>
+            
+        </section>
+
+    </main>
+
+    <footer>
+        <br>
+        <p>I built this site using <abbr title="HyperText Markup Language"><dfn>HTML</dfn></abbr></p>
+        <dialog id="resume-dialog">
+            <p>Thanks for checking out my resume!</p>
+            <button onclick="this.closest('dialog').close()">Close</button>
+        </dialog>
+
+        <p>&copy; 2025 Ryandeep Shelopal</p>
+
+    </footer>
+    
+</body>
+</html>

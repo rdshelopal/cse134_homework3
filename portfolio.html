@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>MyPortfolio</title>
+</head>
+<body>
+    <header>
+        <welcome></welcome> <!--Custom js element-->
+        <search>
+            <form>
+             <input type="text" placeholder="Search projects...">
+            <button type="submit">Search</button>
+            </form>
+        </search>
+    </header>
+    <main>
+
+        <figure>
+            <img src="project.png" alt="Screenshot of my project">
+            <figcaption>Landing page of my dev journal app</figcaption>
+        </figure>
+
+        <strong>Developer Journal</strong>  
+                <a href="https://github.com/cse110-sp24-group33/cse110-sp24-group33" target="_blank">GitHub</a>
+                <p>Developed a streamlined and user-friendly journaling tool tailored for developers, enabling them to efficiently manage deadlines and daily tasks.</p>
+
+        <audio controls>
+            <source src="intro.mp3" type="audio/mpeg">
+            <source src="intro.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+    </main>
+    <footer>
+        <pre>
+        <code>
+         i dont spam divs!
+        </code>
+        </pre>
+
+        <p>&copy; 2025 Ryandeep Shelopal</p>
+
+    </footer>
+
+    <script>
+        class welcome extends HTMLElement {
+        constructor() {
+            super();
+            console.log("Welcome to this page!");
+        }
+        }
+        customElements.define("hello-world", hello-world);
+  </script>
+    
+    
+</body>
+</html>

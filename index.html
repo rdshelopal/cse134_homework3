@@ -5,126 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--webpage adapts to device size-->
     <link rel="icon" href="favicon.ico" type="image/x-icon"> <!--Add an icon later in development-->
     <title>Ryan's (HTML ONLY) Portfolio</title> <!--URL name-->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-        *{
-            font-family: "Montserrat",sans-serif ;/*sans-sarif is safety font*/
-            box-sizing: border-box; /*when we change height and width, it will include the border instead of just content*/
-            margin:0;/*we make padding and margin 0 b/c some elements already have predefined values*/
-            padding:0;
-            background-color: #0d0d0d;
-            color: #00fff7;
-            
-          
-        }
-        #navigation-bar{
-            height: 5rem;/*16 * 5 px*/
-            display: flex;
-            flex-direction: row; /*arranges flex-items in a row*/
-            justify-content: space-around; /*adds spacing around each flex item */
-            align-items: center; /*alligns content along cross-axis*/
-        }
-        
-        .navbar-links{
-            /*border: 4px solid black;*/ /*just to make container easy to see*/
-            display: flex; /*flex box container*/
-            flex-direction: row; /*controls whether flex items lay horizontally or vertically*/
-            gap:2rem;
-            /*align-content would be used if our container had flex-wrap active*/ 
-            list-style: none;/*gets rid of bullet points*/
-            li{
-                a{
-                    text-decoration: none;
-                    
-                }
-                a:hover{text-shadow: 0 0 6px #00fff7;/*adds hover glow*/
-                }
-            }
-           /* li:nth-child(1){
-                justify-self:flex-start;
-
-            }
-            li:last-child{
-                justify-self: flex-end;
-            }*/
-            
-        }
-        #homebutton{
-                padding:0.75rem 1.25rem;
-                border-color:white;
-                font-size: 1rem;
-                
-            }
-        button:hover{
-            box-shadow: 0 0 10px #00fff7;/*adds hover glow*/
-        }
-        button{
-            border: none; /*might be better with border tho*/
-        }
-        
-        #contentblocks{
-            display: flex;
-            flex-direction: row;
-            
-            gap:2rem;
-            padding:0.75rem 2rem;
-            
-        }
-        #textblocks{
-            display:flex;
-            flex-direction: column;
-            
-            flex:2;
-            /* 
-                📌 FLEX LAYOUT RECAP in case i forget:
-
-                When using `display: flex` on a container (like #contentblocks), 
-                applying `flex: 1` to both children (like <picture> and #textblocks) 
-                makes them share the space equally (50/50 split). 
-
-                Then, setting `width: 100%` on something inside (like #headshot img) 
-                makes it fill 100% of its parent — which now equals 50% of the total layout.
-
-                In short:
-                - `flex: 1` splits space between siblings
-                - `width: 100%` makes a child fill the space it's given
-                - Together, they make a clean, balanced, responsive layout
-             */
-             ul{
-                list-style:none;
-             }
-             
-         
-        }
-        #headshot{
-            width: 100%;
-            height: 100%;
-            
-        }
-        picture{
-            flex:1;/*creates enough space for flex-items, could be 1-1 (50/50) or 2-1(75/25), etc.*/
-            
-            
-            
-        }
-        #extrainformation{
-            display:flex;
-            flex-direction: row;
-            gap:6rem;
-        }
-
-        footer{
-            display: flex;
-            flex-direction: column;
-            
-            align-items: center;
-        }
-        h2{
-            padding: 0rem 2rem;
-
-        }
-    </style>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -143,7 +24,7 @@
     <main>
         <section>
             <header>  
-                <h2>Aspiring Software Engineer</h2>   
+                <h2 id="title">Aspiring Software Engineer</h2>   
             </header>
             <main id="contentblocks">
                 <picture>

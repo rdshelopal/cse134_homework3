@@ -4,39 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--webpage adapts to device size-->
     <title>Ryandeep's Resume</title>
-    <style>
-    myskills{
-      display: block;
-      border: 1px solid gray;
-      padding: 10px;
-      margin: 1rem 0;
-    }
-  </style>
+    <link href="styles.css" rel="stylesheet">
   
 </head>
 <body>
     <header>
-        <h1>My Resume</h1>
+        <nav id="navigation-bar">
+            <button id="homebutton"><strong><span>Ryandeep Shelopal</span></strong></button>  <!--Will use name as "Home" Button/add css emphasis-->
+            <ul class="navbar-links">
+                <li><a href="resume.html" alt="resume">Resume</a></li>
+                <li><a href="portfolio.html" alt="portfolio">Portfolio</a></li>
+                <li><a href="answersToInterviewQuestions.html" alt="answersToInterviewQuestions">Answers to Your Interview Questions</a>
+                <li><a href="contactMe.html" alt="contact">Contact Me</a></li>
+            </ul>
+            <button id="settingsbutton">Settings</button> 
+        </nav>
     </header>
-    <main>
+    <main id="resume">
         <article> <!--Each section of my resume will be an article and each part of each article will be a section.-->
             <section>
                 <h2>Education</h2>
-                <p>University of California, San Diego</p>
-                <p>Computer Engineering B.S.</p>
-                <p>Aug 2022 - Aug 2025</p>
+                <hr>
+                <main>
+                    <section id="ucsd1">
+                        <p>University of California, San Diego</p>
+                        <p>La Jolla, CA</p>
+                    </section>
+                    <section id="ucsd2">
+                        <p><em>Computer Engineering (B.S.)</em></p>
+                        <p><em>Aug 2022 - Aug 2025</em></p>
+
+                    </section>
+                    
+                </main>
+                
             </section>
+            <br>
             <section>
-                <p>Ohlone College</p>
-                <p>Mathematics A.S.</p>
-                <p>Aug 2018 - May 2022</p>
+                <section id="ohlone">
+                    <p>Ohlone College</p>
+                    <p>Fremont, CA</p>
+
+                </section>
+                <section id="ohlone2">
+                    <p><em>Mathematics (A.S.)</em></p>
+                    <p><em>Aug 2018 - May 2022</em></p>
+                </section>
+                
+                
             </section>
         </article>
         <article>
-            <section>
-                <h2>Experience</h2>
+            <h2>Experience</h2>
+            <hr>
+            <section id="experiencesection" >
                 <h3>Wireless Product Testing Intern</h3>
-                <p>Underwriter's Laboratories</p>
+                <p><em>Underwriter's Laboratories</em></p>
                 <ul>
                     <li>Operated DASY (Dosimetric Assessment System) robots and CMW 500 call boxes to record SAR (radio frequency)
                         values of wireless devices for compliance with FCC/IC standards.</li>
@@ -48,26 +71,38 @@
             </section>
         </article>
         <article>
-            <section>
+            <h2>Skills</h2>
+            <hr>
+            <section id="skillssection">
                 <myskills>
-                <h2>Skills</h2>
+                
+                
                 <dl>
                 <dt>Frontend & Testing</dt>
-                <dd>HTML, CSS, JavaScript, Jest, Puppeteer, Markdown</dd>
+                <ul>
+                    <li>HTML, CSS, JavaScript, Jest, Puppeteer, Markdown</li>
+                </ul>
 
                 <dt>Databases</dt>
-                <dd>SQL, MySQL</dd>
+                <ul>
+                    <li>SQL, MySQL</li>
+                </ul>
 
                 <dt>Programming Languages</dt>
-                <dd>C, C++, Java, Python</dd>
+                <ul>
+                    <li>C, C++, Java, Python</li>
+                </ul>
+    
                 </dl>
                 </myskills>
             </section>
         </article>
 
         <article>
-            <section>
-                <h2>Projects</h2>
+            <h2>Projects</h2>
+                <hr>
+            <section id="developerjournal">
+                
                 <h3>Developer Journal</h3>
                 <aside>
                     <p>HTML/CSS/Javascript</p>
@@ -83,7 +118,8 @@
                     <li>Delivered a video presentation of the completed project at the end of the 4-week development period</li>
                 </ul>
             </section>
-            <section>
+            <br>
+            <section id="alarm">
                 <h3>Alarm System</h3>
                 <aside>
                     <p>Arduino, C, Breadboarding</p>
@@ -103,8 +139,8 @@
     </main>
 
     <footer>
-
-        <button disabled></button>>View Resume</button>
+        <br>
+        <button disabled></button>>Download Resume!</button>
 
         <dialog id="resumeDialog">
             <h2>My Resume</h2>

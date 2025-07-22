@@ -3,95 +3,69 @@
 <head>
     <meta charset="UTF-8" />
     <title>answersToInterviewQuestions</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
     <header>
-
+        <nav id="navigation-bar">
+            <button id="homebutton"><strong><span>Ryandeep Shelopal</span></strong></button>  <!--Will use name as "Home" Button/add css emphasis-->
+            <ul class="navbar-links">
+                <li><a href="resume.html" alt="resume">Resume</a></li>
+                <li><a href="portfolio.html" alt="portfolio">Portfolio</a></li>
+                <li><a href="answersToInterviewQuestions.html" alt="answersToInterviewQuestions">Answers to Your Interview Questions</a>
+                <li><a href="contactMe.html" alt="contact">Contact Me</a></li>
+            </ul>
+            <button id="settingsbutton">Settings</button> 
     </header>
 
-    <main>
-        <table>
-            <caption>Competency</caption>
-            <colgroup>
-                <col span="1" style="background-color: #f0f0f0;">
-                <col span="1" style="background-color: #fff;">
-            </colgroup>
-            <tr><th>Tool</th><th>Proficiency</th></tr>
-            <tr><td>HTML</td><td>Expert</td></tr>
-        </table>
+    <main id="interviewsection">
+        <h2>Answers to Your Interview Questions</h2>
 
-        <section id="svg-demo">
-        <h2>My SVG Example</h2>
-
-        <svg width="150" height="150">
-            <rect x="10" y="10" width="100" height="100" fill="lightgreen" stroke="black" />
-            <circle cx="60" cy="60" r="30" fill="orange" />
-            <text x="20" y="130" font-size="14" fill="black">SVG!</text>
-        </svg>
+        <section class="qa-block">
+            <h3>Tell me about yourself</h3>
+            <p>
+            I'm a recent Computer Engineering graduate from UC San Diego with a strong foundation in software development, embedded systems, and machine learning. Lately, I’ve been diving deep into front-end development, where I’ve been building responsive and intuitive web experiences using HTML, CSS, and JavaScript. I’m all about turning technical challenges into polished, functional solutions.
+            </p>
         </section>
 
-        <section>
-        <h2>Canvas Demo</h2>
-        <canvas width="200" height="100">
-            Your browser does not support the canvas element.
-        </canvas>
-
-        <!--Script would go down here-->
-        <script>
-            
-            
-        </script>
-        <noscript>
-
-        </noscript>
-
-        
+        <section class="qa-block">
+            <h3>What are your strengths?</h3>
+            <p>
+            I’m reliable, focused, and always ready to learn. I thrive when solving problems—whether it’s debugging hardware or designing a clean web layout. I value structure but can adapt quickly, especially when balancing performance with usability.
+            </p>
         </section>
 
-        <template>
-        <article>
-            <h3>Project Title</h3>
-            <p>This is a reusable layout for future project cards.</p>
-        </article>
-        </template>
-
-
-        <section>
-            <h2>Media & Interactive Elements</h2>
-
-            <!-- 🔳 iframe: Embed resume preview or map -->
-            <h3>Resume Preview (via Google Drive)</h3>
-            <iframe 
-                src="https://drive.google.com/file/d/your-file-id-here/preview" 
-                width="400" height="300" 
-                title="Resume Preview">
-            </iframe>
-
-            <!-- 🎥 video: Demo of a project or intro -->
-            <h3>Video Introduction</h3>
-            <video width="320" height="240" controls>
-                <source src="intro.mp4" type="video/mp4">
-                <source src="intro.webm" type="video/webm">
-                Your browser does not support the video tag.
-            </video>
-
-            <!-- 📊 progress: Skill mastery demo or loading UI -->
-            <h3>Portfolio Completion Progress</h3>
-            <label for="progress-bar">Page Build Progress:</label><br>
-            <progress id="progress-bar" value="80" max="100">80%</progress>
+        <section class="qa-block">
+            <h3>How do you handle tight deadlines or pressure?</h3>
+            <p>
+            I break the work down into small, clear chunks and stay organized. I prioritize communication with teammates and keep momentum up without panicking. I’ve learned how to pace myself from managing projects during busy school quarters and staying consistent with technical deep-dives.
+            </p>
         </section>
 
+        <section class="qa-block">
+            <h3>What excites you about front-end development?</h3>
+            <p>
+            I love being able to directly shape the user experience. There’s something satisfying about turning logic into design—whether it's through clean HTML structure or adding that final touch of interactivity with JavaScript. Plus, it's rewarding to see your work instantly come to life in the browser.
+            </p>
+        </section>
 
+        <section class="qa-block">
+            <h3>How do you stay up to date?</h3>
+            <p>
+            I experiment a lot—building my own projects and adjusting them as I learn. I also explore community resources, YouTube channels, and documentation. I focus on learning by doing, which keeps things hands-on and practical.
+            </p>
+        </section>
 
-
-
-
-
-
-
+        <section class="qa-block">
+            <h3>What kind of work environment do you thrive in?</h3>
+            <p>
+            I work best in environments that value independence, clarity, and momentum. I enjoy asynchronous communication, and I’m comfortable owning tasks and following through without micromanagement. That said, I really appreciate teammates who check in, share feedback, and collaborate with purpose.
+            </p>
+        </section>
     </main>
     
     <footer>
+         <p>&copy; 2025 Ryandeep Shelopal</p>
 
     </footer>
 </body>

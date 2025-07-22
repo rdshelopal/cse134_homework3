@@ -4,29 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--webpage adapts to device size-->
     <title>Contact Me</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Contact Form</h1>
+        <nav id="navigation-bar">
+            <button id="homebutton"><strong><span>Ryandeep Shelopal</span></strong></button>  <!--Will use name as "Home" Button/add css emphasis-->
+            <ul class="navbar-links">
+                <li><a href="resume.html" alt="resume">Resume</a></li>
+                <li><a href="portfolio.html" alt="portfolio">Portfolio</a></li>
+                <li><a href="answersToInterviewQuestions.html" alt="answersToInterviewQuestions">Answers to Your Interview Questions</a>
+                <li><a href="contactMe.html" alt="contact">Contact Me</a></li>
+            </ul>
+            <button id="settingsbutton">Settings</button> 
+        </nav>
     </header>
     <main>
-        <form action="/submit-form" method="POST">
-            <fieldset>
-                <legend>Contact Information</legend>
+        <section id="contact">
+            <h2>Contact Form</h2>
+            <address>
+                Email: <a href="rdshelopal@gmail.com">rdshelopal@gmail.com</a><br>
+                GitHub: <a href="https://github.com/rdshelopal">GitHub</a><br>
+                LinkedIn: <a href="https://www.linkedin.com/in/ryan-shelopal/">LinkedIn</a>
+            </address>
+        </section>
+
+        <form id="contactForm" action="/submit-form" method="POST">
+            <fieldset id="nameandemail">
+               
                 <div>
-                    <label for="full_name_field" placeholder="YourFullName">Name:</label><br>
-                    <input type="text" name="name"><br>
+                    <label for="full_name_field"></label>Name:</label><br>
+                    <input type="text" name="name"  placeholder="YourFullName"><br>
                 </div>
                 <div>
-                    <label for="email_field" placeholder="YourEmail">Email:</label><br>
-                    <input type="email" name="email"><br>
+                    <label for="email_field" >Email:</label><br>
+                    <input type="email" name="email" placeholder="YourEmail"><br>
                  </div>
             </fieldset>
-            <fieldset>
-                <legend>Your Message</legend>
+            <fieldset id="message">
                 <div>
-                    <label for="message" placeholder="YourMessage">Message:</label><br>
-                    <textarea name="message" rows="5"></textarea><br>
+                    <label for="message" >Message:</label><br>
+                    <textarea name="message" rows="5" placeholder="YourMessage"></textarea><br>
                 </div>
             </fieldset>
             
@@ -35,49 +53,9 @@
             </div>
 
         </form>
-        <form>
-            <fieldset>
-                <legend><kbd>Choose Your Favorite Language</kbd></legend>
-
-               <!-- Fixed dropdown -->
-                <label for="lang-select">From a dropdown:</label><br>
-                <select id="lang-select" name="language">
-                <optgroup label="Frontend">
-                    <option value="html">HTML</option>
-                    <option value="css">CSS</option>
-                    <option value="javascript">JavaScript</option>
-                </optgroup>
-
-                <optgroup label="Backend">
-                    <option value="python">Python</option>
-                    <option value="java">Java</option>
-                    <option value="c++">C++</option>
-                </optgroup>
-                </select><br><br>
-
-
-                <!-- Flexible input with suggestions -->
-                <label for="lang-input">Or type one:</label><br>
-                <input list="lang-options" id="lang-input" name="language-typed">
-                <datalist id="lang-options">
-                <option value="HTML">
-                <option value="CSS">
-                <option value="JavaScript">
-                <option value="Python">
-                <option value="C++">
-                </datalist>
-            </fieldset>
-
-            <button type="submit">Submit</button>
-        </form>     
     </main>
     <footer>
         <br>
-        <address>
-                Ryandeep Shelopal<br>
-                rdshelopal@email.com<br>
-                San Diego, CA
-            </address>
         <p>&copy; 2025 Ryandeep Shelopal</p>
     </footer>
     
